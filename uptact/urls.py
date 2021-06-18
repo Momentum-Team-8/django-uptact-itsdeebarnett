@@ -25,6 +25,7 @@ urlpatterns = [
     path('contacts/<int:pk>/edit/',
          contacts_views.edit_contact,
          name='edit_contact'),
+    path('contacts/<int:pk>/notes/new', contacts_views.show_contact, name='show_contact'),
     path('contacts/<int:pk>/delete/',
          contacts_views.delete_contact,
          name='delete_contact'),
